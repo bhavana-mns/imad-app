@@ -56,26 +56,6 @@ var articles = {
     }
 };
 
-
-
-var articleThree={
-  title: "Article Three | Bhavana Malepaty",
-  heading: "Article Three",
-  date: "Aug 4 2017",
-  content: `
-                <p>
-                    This is the content for my third article. 
-                </p>
-                <p>
-                    This is the content for my third article. 
-                </p>
-                <p>
-                    This is the content for my third article. 
-                </p>
-            `
-};
-
-
 function createTemplate(data){
     var title = data.title;
     var heading = data.heading;
@@ -114,8 +94,8 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/article-one', function(req,res){
-    res.send(createTemplate(articleOne));
+app.get('/:articleName', function(req,res){
+    res.send(createTemplate(articles[articleName]));
 });
 
 app.get('/ui/style.css', function (req, res) {
