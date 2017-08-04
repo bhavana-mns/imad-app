@@ -30,10 +30,8 @@ var htmlTemplate = `
             <link href="/ui/style.css" rel="stylesheet"/>
         </head>
         <body>
-            <div>
-                <div class="container">
-                    <h1>${heading}</h1>
-                </div>
+            <div class="container">
+                <h1>${heading}</h1>
                 <div>
                     <a href="/">Home</a>
                 </div>
@@ -47,8 +45,6 @@ var htmlTemplate = `
             </div>
         </body>
     </html>
-
-
 `;
 
 app.get('/', function (req, res) {
