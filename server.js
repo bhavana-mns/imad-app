@@ -22,6 +22,40 @@ var articleOne={
             `
 };
 
+var articleTwo={
+  title: "Article Two | Bhavana Malepaty",
+  heading: "Article Two",
+  date: "Aug 4 2017",
+  content: `
+                <p>
+                    This is the content for my second article. 
+                </p>
+                <p>
+                    This is the content for my second article. 
+                </p>
+                <p>
+                    This is the content for my second article. 
+                </p>
+            `
+};
+var articleThree={
+  title: "Article Three | Bhavana Malepaty",
+  heading: "Article Three",
+  date: "Aug 4 2017",
+  content: `
+                <p>
+                    This is the content for my third article. 
+                </p>
+                <p>
+                    This is the content for my third article. 
+                </p>
+                <p>
+                    This is the content for my third article. 
+                </p>
+            `
+};
+
+
 function createTemplate(data){
     var title = data.title;
     var heading = data.heading;
@@ -69,7 +103,7 @@ app.get('/ui/style.css', function (req, res) {
 });
 
 app.get('/article-two', function(req,res){
-    res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
+    res.send(createTemplate(articleTwo));
 });
 
 app.get('/ui/madi.png', function (req, res) {
