@@ -2,7 +2,8 @@
 //Change contents of main-text div
  var element = document.getElementById('main-text');
  element.innerHTML='New value';
- /**
+ 
+ 
  //Move the image
  var img=document.getElementById('madi');
  var marginLeft = 0;
@@ -15,7 +16,7 @@
  };
   
 
-/**
+
 //Counter code
 var button=document.getElementById("counter");
 var counter=0;
@@ -24,4 +25,4 @@ button.onclick = function startCount(){
   counter=counter+1;
   var span=document.getElementById('count');
   span.innerHTML=counter.toString();
-};**/
+};
