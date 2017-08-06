@@ -1,8 +1,8 @@
 
 //Change contents of main-text div
  var element = document.getElementById('main-text');
- //element.innerHTML='New value';
- 
+ element.innerHTML='New value';
+ /**
  //Move the image
  var img=document.getElementById('madi');
  var marginLeft = 0;
