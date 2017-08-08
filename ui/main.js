@@ -41,7 +41,7 @@ button.onclick = function(){
     var span=document.getElementById('count');
     span.innerHTML=counter.toString();**/
 //}; 
-
+window.onload = function(){
 //Submit Name
 var nameInput = document.getElementById('name');
 //var name = nameInput.value();
@@ -59,5 +59,6 @@ submit.onclick = function(){
   ul.innerHTML=list;
   
 };
+}
 
 
