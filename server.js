@@ -98,6 +98,10 @@ app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 
+app.get('/favicon.ico', function (req, res) {
+  res.send('hi');
+});
+
 var counter = 0;
 app.get('/counter', function (req, res) {
   counter=counter+1;
