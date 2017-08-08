@@ -1,4 +1,4 @@
-window.onload = function(){
+
 /**
 //Change contents of main-text div
  var element = document.getElementById('main-text').innerHTML='New value';
@@ -60,6 +60,6 @@ submit.onclick = function(){
   ul.innerHTML=list;
   
 };
-}
+
 
 
