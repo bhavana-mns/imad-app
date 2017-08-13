@@ -140,7 +140,7 @@ app.get('/favicon.ico', function (req, res) {
 app.get('/articles/:articleName', function(req,res){
     //var articleName = req.params.articleName;
     
-    pool.query("Select * from article where title= '"+ req.params.articleName + "'",function(err,result){
+    pool.query("Select * from article where title= $1",[req.params.article-name],function(err,result){
         if(err){
            res.status(500).send(err.toString());
        }else{
