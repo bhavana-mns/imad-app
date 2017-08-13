@@ -14,7 +14,8 @@ var config={
 var app = express();
 app.use(morgan('combined'));
 
-var articles = {
+//Articles object deleted, as data from database linked with code
+/* var articles = {
     'article-one':{
       title: "Article One | Bhavana Malepaty",
       heading: "Article One",
@@ -63,7 +64,7 @@ var articles = {
                     </p>
                 `
     }
-};
+}; */
 
 function createTemplate(data){
     var title = data.title;
