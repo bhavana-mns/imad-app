@@ -139,11 +139,13 @@ app.post('/login',function(req,res){
     var username = req.body.username;
    var password = req.body.password;
    
-   pool.query('SELECT * from "user" username=$1',[username],function(err,result){
+   pool.query('SELECT * from "user" WHERE username=$1',[username],function(err,result){
       if(err){
            res.status(500).send(err.toString());
        }else{
-           if(result.rows.length===0) res.send(403).send("Username/password is invalid");
+           if(result.rows.length===0){
+             res.send(403).send("Username/password is invalid");  
+           } 
            else{
                //Match password
                var dbString = result.rows[0].password;
