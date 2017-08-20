@@ -141,7 +141,7 @@ app.post('/login',function(req,res){
    
    pool.query('SELECT * from "user" WHERE username=$1',[username],function(err,result){
       if(err){
-           res.status(500).send(err.toString());
+           res.send(500).send(err.toString());
        }else{
            if(result.rows.length===0){
              res.send(403).send("Username/password is invalid");  
