@@ -85,7 +85,7 @@ submit1.onclick = function(){
     var password = document.getElementById('password').value
     console.log(username);
     console.log(password);
-    request.open('POST','http://mnsbha12362.imad.hasura-app.io/submit-name?name='+name,true);
+    request.open('POST','http://mnsbha12362.imad.hasura-app.io/login',true);
     request.send(JSON.stringify({username:username,password:password}));
 }
 }
