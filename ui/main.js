@@ -15,7 +15,7 @@
    var interval = setInterval(moveRight,50);
  };
  **/ 
-
+/**
 
 //Counter code
 var button=document.getElementById('counter');
@@ -38,10 +38,11 @@ button.onclick = function(){
     request.open('GET','http://mnsbha12362.imad.hasura-app.io/counter',true);
     request.send(null);
     
-    /**counter=counter+1;
+    counter=counter+1;
     var span=document.getElementById('count');
-    span.innerHTML=counter.toString();**/
-}; 
+    span.innerHTML=counter.toString();
+};  **/
+/**
 
 //Submit Name
 var nameInput = document.getElementById('name');
@@ -59,7 +60,7 @@ submit.onclick = function(){
   var ul=document.getElementById('nameList');
   ul.innerHTML=list;
   
-};
+}; **/
 
 
 
