@@ -71,7 +71,7 @@ submit1.onclick = function(){
             if(request.status===200){
                 console.log("User logged in");
                 alert("Logged in Succesfully")
-            }else if(request.status===400){
+            }else if(request.status===403){
                 alert("Username/Password Incorrect");
             }else if(request.status===500){
                 alert("Something went wrong on server!");
